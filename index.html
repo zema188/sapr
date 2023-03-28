@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="files/fonts/stylesheet.css">
+	<link rel="stylesheet" type="text/css" href="css/style.min.css">
+	<title>Zemail</title>
+</head>
+<body>	
+	<div class="wrapper">
+		
+<div class="header-w">
+    <header class ="header">
+        <div class="header__top">
+            <a href="index.html" class="header__logo">
+                sapr
+            </a>
+        </div>
+    </header>
+</div>
+<div class="info-w">
+    <div class="info">
+        <div class="info__top">
+            <div class="info__title">
+                Информация
+            </div>
+        </div>
+        <div class="info__content">
+            <div class="info__content-lists">
+                <div class="info__list list__focused">
+                    <div class="info__item info__focused">
+                        <div class="info__item-title focused__title">
+                            Сосредоточенные нагрузки
+                        </div>
+                        <div class="info__item-subtitles">
+                            <div class="info__item-subtitle">
+                                № узла
+                            </div>
+                            <div class="info__item-subtitle">
+                                Значение
+                            </div>
+                        </div>
+                        <!-- <div class="info__item-bar focused__bar">
+                            <div class="info__item-number focused__number">
+                                1
+                            </div>
+                            <div class="info__item-value focused__value">
+                                123
+                            </div>
+						    <img class="info-item__del focused__del-btn" src="./img/exit.svg" alt="exit-btn">
+                        </div> -->
+                    </div>
+                </div>
+                <div class="info__list list__distributed">
+                    <div class="info__item info__distributed">
+                        <div class="info__item-title distributed__title">
+                            Распределенные нагрузки
+                        </div>
+                        <div class="info__item-subtitles">
+                            <div class="info__item-subtitle">
+                                № Стержня
+                            </div>
+                            <div class="info__item-subtitle">
+                                Значение
+                            </div>
+                        </div>
+                        <!-- <div class="info__item-bar distributed__bar">
+                            <div class="info__item-number distributed__number">
+                                1
+                            </div>
+                            <div class="info__item-value distributed__value">
+                                123
+                            </div>
+						    <img class="info-item__del distributed__del-btn" src="./img/exit.svg" alt="exit-btn">
+                        </div> -->
+                    </div>
+                </div>
+                <div class="info__list list__support">
+                    <div class="info__item info__support">
+                        <div class="info__item-title support__title">
+                            Опоры
+                        </div>
+                        <div class="info__item-subtitles">
+                            <div class="info__item-subtitle">
+                                № узла
+                            </div>
+                        </div>
+                        <!-- <div class="info__item-bar support__bar">
+                            <div class="info__item-number support__number">
+                                1
+                            </div>
+						    <img class="info-item__del __del-btn" src="./img/exit.svg" alt="exit-btn">
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="info__footer">
+            <div class="info__footer-btn art-info-rodes disabled">
+                Визуализировать
+            </div>
+        </div>
+        <div class="file-bar">
+            <input type='file' class="load-file">
+            <div class="load-data">Загрузить данные</div>
+            <div class="processor">Рассчитать данные</div>
+        </div>
+    </div>
+</div>
+
+		<section class="rod-add container">
+			<form class="rod-add__content">
+				<div class="rod-add__top">
+					<div class="rod-add__title title">
+						Добавление нового стержня
+					</div>
+				</div>
+				<div class="rod-add__content-list">
+					<div class="rod-add__list-item rod-add__item_L">
+						<div class="rod-add__item-title">
+							Длина стержня (L)
+						</div>
+						<input type="number" class="rod-add__input-L rod-add__input" placeholder="Введите число" value="2">
+					</div>
+					<div class="rod-add__list-item rod-add__item_A">
+						<div class="rod-add__item-title">
+							Площадь поперечного сечения (A)
+						</div>
+						<input type="number" class="rod-add__input-A rod-add__input" placeholder="Введите число" value="2">
+					</div>
+					<div class="rod-add__list-item rod-add__item_E">
+						<div class="rod-add__item-title">
+							Модуль упругости (E)
+						</div>
+						<input type="number" class="rod-add__input-E rod-add__input"  placeholder="Введите число" value="2">
+					</div>
+					<div class="rod-add__list-item rod-add__item_B">
+						<div class="rod-add__item-title">
+							Допускаемое напряжение (Б)
+						</div>
+						<input type="number" class="rod-add__input-B rod-add__input"  placeholder="Введите число" value="2">
+					</div>
+					<!-- <div class="rod-add__list-item rod-add__item_F">
+						<div class="rod-add__item-title">
+							Сосредоточенная нагрузга (F)
+						</div>
+						<input class="rod-add__input-F rod-add__input" placeholder="Введите число">
+					</div>
+					<div class="rod-add__list-item rod-add__item_Q">
+						<div class="rod-add__item-title">
+							Погонная нагрузка (Q)
+						</div>
+						<input class="rod-add__input-Q rod-add__input" placeholder="Введите число">
+					</div> -->
+				</div>
+				<div class="rod-add__footer">
+					<div class="rod-add__footer-content">
+						<div class="rod-add__clear-btn rod-add__footer-btn">
+							Очистить
+						</div>
+						<div class="rod-add__save-btn rod-add__footer-btn disabled">
+							Добавить
+						</div>
+					</div>
+				</div>
+			</form>
+		</section>
+		<section class="rods-table container">
+			<div class="table__top">
+				<div class="table_title title">
+					Стержни констуркции
+				</div>
+			</div>
+			<div class="table__content">
+				<div class="table__content-subtitles">
+					<div class="table__subtitles-list">
+						<div class="table__subtitle">
+							№
+						</div>
+						<div class="table__subtitle">
+							Длина стержня (L)
+						</div>
+						<div class="table__subtitle">
+							Площадь поперечного сечения (A)
+						</div>
+						<div class="table__subtitle">
+							Модуль упругости (E)
+						</div>
+						<div class="table__subtitle">
+							Допускаемое напряжение (Б)
+						</div>
+						<!-- <div class="table__subtitle">
+							Сосредоточенная нагрузга (F)
+						</div>
+						<div class="table__subtitle">
+							Погонная нагрузка (Q)
+						</div> -->
+					</div>
+				</div>
+				<div class="table__content-lines">
+					<!-- <div class="table__line">
+						<div class="table__line-content">
+							<div class="table__line-value table__line-number">
+								1
+							</div>
+							<div class="table__line-value table__line-L">
+								3
+							</div>
+							<div class="table__line-value table__line-A">
+								3
+							</div>
+							<div class="table__line-value table__line-E">
+								1
+							</div>
+							<div class="table__line-value table__line-B">
+								1
+							</div>
+						</div>
+						<img class="table__line-del" src="./img/exit.svg" alt="exit-btn">
+					</div> -->
+				</div>
+			</div>
+			<div class="table__footer">
+				<div class="table__footer-content">
+					<div class="table__footer-supports">
+						<!-- <label class="table__support_left table__footer-checkbox">
+							<input class="table__support-checkbox_left" type="checkbox" id="support_left" checked>
+							<div class="table-custom-checkbox"></div>
+							<div class="contact__form-checkbox-text">
+								Опора слева
+							</div>
+						</label>
+						<label class="table__support_right table__footer-checkbox">
+							<input class="table__support-checkbox_right" type="checkbox" id="support_right" checked>
+							<div class="table-custom-checkbox"></div>
+							<div class="contact__form-checkbox-text">
+								Опора справа
+							</div>
+						</label> -->
+					</div>
+					<div class="table__footer-btns">
+
+						<div class="table__footer-clear-list table__footer-btn disabled">
+							Очистить список
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="loads container">
+			<div class="loads__title title">
+				Добавление нагрузок и опор
+			</div>
+			<div class="loads__content">
+				<div class="focused">
+					<div class="focused__title">
+						Сосредоточенная нагрузка
+					</div>
+					<div class="focused__content">
+						<div class="focused__item">
+							<div class="focused__item-title">
+								Номер узла
+							</div>
+							<input type="number" class="focused__input-number focused-input" placeholder="Введите номера узла" value="1">
+						</div>
+						<div class="focused__item">
+							<div class="focused__item-title">
+								Значение
+							</div>
+							<input type="number" class="focused__input-value focused-input" placeholder="Введите значение" value="1">
+						</div>
+					</div>
+					<div class="focused__footer">
+						<div class="focused__footer-content">
+							<div class="focused__save-btn focused__footer-btn disabled">
+								Добавить
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="distributed">
+					<div class="distributed__title">
+						Распределенная нагрузка
+					</div>
+					<div class="distributed__content">
+						<div class="distributed__item">
+							<div class="distributed__item-title">
+								Номер стержня
+							</div>
+							<input class="distributed__input-number distributed__input" type="number" placeholder="Введите номер стержня" value="1">
+						</div>
+						<div class="distributed__item">
+							<div class="distributed__item-title">
+								Значение
+							</div>
+							<input class="distributed__input-value distributed__input" type="number" placeholder="Введите значение" value="1">
+						</div>
+					</div>
+					<div class="distributed__footer">
+						<div class="distributed__footer-content">
+							<div class="distributed__save-btn distributed__footer-btn disabled">
+								Добавить
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="support">
+					<div class="support__title">
+						Опора
+					</div>
+					<div class="support__content">
+						<div class="support__list">
+							<div class="support__item">
+								<div class="support__item-title">
+									Номер узла
+								</div>
+								<input type="number" class="support__item-value support-input" placeholder="Введите номер узла" value="1">
+							</div>
+						</div>
+					</div>
+					<div class="support__footer">
+						<div class="support__footer-content">
+							<div class="support__save-btn support__footer-btn disabled">
+								Добавить
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="art container">
+			<div class="art__top">
+				<div class="art__title title">
+					Визуализация
+				</div>
+				<div class="art__top-btns">
+					<div class="table__footer-art art__top-btn disabled">
+						Визуализировать стержни
+					</div>
+					<div class="clear-art art__top-btn">
+						Очистить
+					</div>
+				</div>
+			</div>
+			<div class="art__content">
+				<canvas id="scheme"></canvas>
+			</div>
+		</section>
+	</div>
+
+	<script type="module" src="js/app.js"></script>
+</body>
+</html>
+
+
